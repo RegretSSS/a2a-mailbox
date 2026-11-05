@@ -1,0 +1,10 @@
+[Unit]
+Description=a2a-mailbox hub daemon
+
+[Service]
+ExecStart=/usr/bin/python3 %h/workspace/a2a-mailbox/hub/hub.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
