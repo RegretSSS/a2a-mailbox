@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.RegretSSS/a2a-mailbox",
+  "description": "Cross-CLI agent mailbox: tmux-injected messaging for Claude Code, Codex, Pi and ZCode",
+  "version": "0.1.0",
+  "title": "a2a-mailbox",
+  "repository": {
+    "url": "https://github.com/RegretSSS/a2a-mailbox",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/RegretSSS/a2a-mailbox",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/RegretSSS/a2a-mailbox/releases/download/v0.1.0/a2a-mailbox.mcpb",
+      "fileSha256": "3635d09a48c2669f1af8c0d0e32a48b5414099ed162997b6ab35fc956c3f8d5a",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
