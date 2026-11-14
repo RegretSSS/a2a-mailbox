@@ -1,0 +1,7 @@
+[project]
+name = "a2a-mailbox"
+version = "0.2.0"
+description = "Cross-CLI agent mailbox: file-based messaging with tmux injection"
+requires-python = ">=3.10"
+dependencies = ["fastmcp>=4,<5"]
+license = "Apache-2.0"

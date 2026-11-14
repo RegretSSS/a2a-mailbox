@@ -1,0 +1,21 @@
+{
+  "manifest_version": "0.4",
+  "name": "a2a-mailbox",
+  "version": "0.2.0",
+  "description": "Cross-CLI agent mailbox: file-based messaging with tmux injection for Claude Code, Codex, Pi and ZCode",
+  "author": {
+    "name": "RegretSSS"
+  },
+  "license": "Apache-2.0",
+  "server": {
+    "type": "uv",
+    "entry_point": "mcp/mailbox_mcp.py",
+    "mcp_config": {
+      "command": "python",
+      "args": [
+        "${__dirname}/mcp/mailbox_mcp.py"
+      ],
+      "env": {}
+    }
+  }
+}

@@ -1,0 +1,14 @@
+- insert:
+    - id: mcp-mailbox
+      name: '/home/user-a/workspace/deepseek-harness/packages/mcp/mcp-client/lib/index.js'
+      config:
+        serverName: mailbox
+        transport: stdio
+        command: python3
+        args: [ '/home/user-a/workspace/a2a-mailbox/mcp/mailbox_mcp.py' ]
+        env:
+          A2A_HOST_TAG: host-a
+          A2A_AGENT_ID: dsh-host-a-wsl
+          A2A_CLI: dsh
+          A2A_PANELESS: '1'
+          A2A_RPC_INBOX_URL: http://127.0.0.1:3080

@@ -1,0 +1,16 @@
+{
+  "name": "magpie-gateway-a2a-mailbox",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "a2a-mailbox 的 magpie 网关钩子: 被 magpie 托管的 agent 有待收信时, 在下一轮模型请求里注入一行通知; 心跳落盘供 mailbox 侧验证托管状态。只读队列, 永不消费信件",
+  "license": "Apache-2.0",
+  "repository": { "type": "git", "url": "https://github.com/RegretSSS/a2a-mailbox" },
+  "magpie": {
+    "hooks": "./mailbox.hooks.mjs",
+    "options": {
+      "mailboxRoot": "~/.agents-mailbox",
+      "notifyCooldownSeconds": 60,
+      "heartbeatTtlSeconds": 600
+    }
+  }
+}
