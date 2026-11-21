@@ -1,0 +1,4 @@
+[mcp_servers.mailbox]
+command = "wsl.exe"
+args = ["-d", "Ubuntu", "--", "/usr/bin/python3", "<REPO_PATH>/mcp/mailbox_mcp.py"]
+env = { "A2A_CLI" = "codex", "WSLENV" = "A2A_CLI" }

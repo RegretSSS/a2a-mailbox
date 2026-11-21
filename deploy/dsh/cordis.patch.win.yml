@@ -1,0 +1,16 @@
+- insert:
+    - id: mcp-mailbox
+      name: '<dsh-win-root>\packages\mcp\mcp-client\lib\index.js'
+      config:
+        serverName: mailbox
+        transport: stdio
+        command: 'C:\Windows\System32\wsl.exe'
+        args: [ '-u', '<wsl-user>', '--', 'python3', '<repo>/mcp/mailbox_mcp.py' ]
+        cwd: '<win-session-dir>'
+        env:
+          A2A_HOST_TAG: <host-tag>
+          A2A_AGENT_ID: dsh-<host-tag>-win
+          A2A_CLI: dsh
+          A2A_PANELESS: '1'
+          A2A_RPC_INBOX_URL: http://127.0.0.1:<win-port>
+          WSLENV: 'A2A_AGENT_ID/u:A2A_CLI/u:A2A_PANELESS/u:A2A_RPC_INBOX_URL/u:A2A_HOST_TAG/u'

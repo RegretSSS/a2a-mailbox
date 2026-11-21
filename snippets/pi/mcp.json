@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "mailbox": {
+      "command": "python3",
+      "args": [
+        "<REPO_PATH>/mcp/mailbox_mcp.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+- insert:
+    - id: mcp-mailbox
+      name: '<dsh-win-root>\packages\mcp\mcp-client\lib\index.js'
+      config:
+        serverName: mailbox
+        transport: stdio
+        command: '<win-python-exe>'
+        args: [ '<repo-unc>\mcp\mailbox_mcp.py' ]
+        cwd: '<win-session-dir>'
+        env:
+          A2A_MAILBOX_ROOT: '<win-mailbox-root>'
+          A2A_AGENT_ID: dsh-<host-tag>-win
+          A2A_CLI: dsh
+          A2A_PANELESS: '1'
+          A2A_RPC_INBOX_URL: http://127.0.0.1:<win-port>
+          A2A_HOST_TAG: <host-tag>
+          A2A_HUB_IDLE_REAP: '1'
+          PYTHONUTF8: '1'
